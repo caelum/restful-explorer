@@ -1,0 +1,22 @@
+== Responders Backport for Rails 2.3.x
+
+Loving Rails 3 Responders[1] feature? Me too.
+
+Wants to use Responders in your Rails 2.3.x apps? Use InheritedResources. IR backports [2] Responder to your Rails 2.3.x apps and adds lots of useful and awesome features.
+
+However, in some cases we don't want to use all IR awesome features. So, I extracted Responders-backporting-stuff to a minimal lib. This is mainly to be use as a dependency by Restfulie (http://github.com/caelum/restfulie)
+
+
+=== Notes
+
+[1] Please see these posts about Responders :
+
+http://blog.plataformatec.com.br/2009/12/one-in-three-inherited-resources-has-scope-and-responders/
+
+http://blog.plataformatec.com.br/2009/08/inherited-resources-is-scopes-and-responder-fluent/
+
+
+[2] This is not entirely true, since Rails 3 Responders was actually *inspired* by InheritedResources new features to Rails 2.
+
+Copyright (c) 2010 George Guimarães and José Valim http://blog.plataformatec.com.br
+See the attached MIT License.

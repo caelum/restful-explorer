@@ -20,6 +20,12 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "restfulie", :version => ">=0.7.2"
+  config.gem "responders_backport", :version => ">=0.1.0"
+  config.gem "json_pure", :version => ">=1.2.4"
+  # s.add_dependency("actionpack", [">= 2.3.2"])
+  # s.add_dependency("activesupport", [">= 2.3.2"])
+  # s.add_dependency("responders_backport", ["~> 0.1.0"])
+  # s.add_dependency("json_pure", [">= 1.2.4"])
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

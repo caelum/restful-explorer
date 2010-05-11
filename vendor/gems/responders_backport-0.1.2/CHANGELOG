@@ -1,0 +1,13 @@
+# Version 0.1.2
+
+Changes from InheritedResources v1.0 branch:
+*  Handle some edge cases in respond_to.
+*  Fix mime negotiation if no specific format is requested.
+
+# Version 0.1.1
+
+* attr_reader :response added.
+
+# Version 0.1
+
+* First release. Extracted from InheritedResources v1.0 (Rails 2.3.x)

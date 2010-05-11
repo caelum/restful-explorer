@@ -1,0 +1,74 @@
+--- !ruby/object:Gem::Specification 
+name: responders_backport
+version: !ruby/object:Gem::Version 
+  prerelease: false
+  segments: 
+  - 0
+  - 1
+  - 2
+  version: 0.1.2
+platform: ruby
+authors: 
+- "George Guimar\xC3\xA3es"
+- "Jos\xC3\xA9 Valim"
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-03-16 00:00:00 -03:00
+default_executable: 
+dependencies: []
+
+description: Bringing Rails 3 Responders to your obsolete Rails 2.3.x apps =)
+email: george@plataformatec.com.br
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README.rdoc
+files: 
+- CHANGELOG
+- MIT-LICENSE
+- README.rdoc
+- Rakefile
+- init.rb
+- lib/responders_backport.rb
+- lib/responders_backport/respond_to.rb
+- lib/responders_backport/responder.rb
+- lib/responders_backport/version.rb
+- test/respond_to_test.rb
+- test/test_helper.rb
+has_rdoc: true
+homepage: http://github.com/plataformatec/responders_backport
+licenses: []
+
+post_install_message: 
+rdoc_options: 
+- --charset=UTF-8
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: responders_backport
+rubygems_version: 1.3.6
+signing_key: 
+specification_version: 3
+summary: Bringing Rails 3 Responders to your obsolete Rails 2.3.x apps =)
+test_files: 
+- test/respond_to_test.rb
+- test/test_helper.rb

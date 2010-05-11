@@ -1,0 +1,41 @@
+# encoding: UTF-8
+
+require 'rake'
+require 'rake/testtask'
+require 'rake/rdoctask'
+require File.join(File.dirname(__FILE__), 'lib', 'responders_backport', 'version')
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |s|
+    s.name = "responders_backport"
+    s.version = RespondersBackport::VERSION
+    s.rubyforge_project = "responders_backport"
+    s.summary = "Bringing Rails 3 Responders to your obsolete Rails 2.3.x apps =)"
+    s.email = "george@plataformatec.com.br"
+    s.homepage = "http://github.com/plataformatec/responders_backport"
+    s.description = "Bringing Rails 3 Responders to your obsolete Rails 2.3.x apps =)"
+    s.authors = ['George Guimarães', 'José Valim']
+    s.files =  FileList["[A-Z]*", "init.rb", "{lib}/**/*"]
+  end
+
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler, or one of its dependencies, is not available. Install it with: sudo gem install jeweler"
+end
+
+desc 'Run tests for RespondersBackport.'
+Rake::TestTask.new(:test) do |t|
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = true
+end
+
+desc 'Generate documentation for RespondersBackport.'
+Rake::RDocTask.new(:rdoc) do |rdoc|
+  rdoc.rdoc_dir = 'rdoc'
+  rdoc.title    = 'RespondersBackport'
+  rdoc.options << '--line-numbers' << '--inline-source'
+  rdoc.rdoc_files.include('README.rdoc')
+  rdoc.rdoc_files.include('MIT-LICENSE')
+  rdoc.rdoc_files.include('lib/**/*.rb')
+end
