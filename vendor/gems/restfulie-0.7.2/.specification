@@ -1,0 +1,173 @@
+--- !ruby/object:Gem::Specification 
+name: restfulie
+version: !ruby/object:Gem::Version 
+  prerelease: false
+  segments: 
+  - 0
+  - 7
+  - 2
+  version: 0.7.2
+platform: ruby
+authors: 
+- Guilherme Silveira, Caue Guerra
+autorequire: 
+bindir: bin
+cert_chain: []
+
+date: 2010-04-19 00:00:00 -03:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: actionpack
+  prerelease: false
+  requirement: &id001 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 2
+        - 3
+        - 2
+        version: 2.3.2
+  type: :runtime
+  version_requirements: *id001
+- !ruby/object:Gem::Dependency 
+  name: activesupport
+  prerelease: false
+  requirement: &id002 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 2
+        - 3
+        - 2
+        version: 2.3.2
+  type: :runtime
+  version_requirements: *id002
+- !ruby/object:Gem::Dependency 
+  name: responders_backport
+  prerelease: false
+  requirement: &id003 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ~>
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 0
+        - 1
+        - 0
+        version: 0.1.0
+  type: :runtime
+  version_requirements: *id003
+- !ruby/object:Gem::Dependency 
+  name: json_pure
+  prerelease: false
+  requirement: &id004 !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        segments: 
+        - 1
+        - 2
+        - 4
+        version: 1.2.4
+  type: :runtime
+  version_requirements: *id004
+description: 
+email: guilherme.silveira@caelum.com.br
+executables: []
+
+extensions: []
+
+extra_rdoc_files: []
+
+files: 
+- lib/restfulie/client/base.rb
+- lib/restfulie/client/configuration.rb
+- lib/restfulie/client/http/adapter.rb
+- lib/restfulie/client/http/atom_ext.rb
+- lib/restfulie/client/http/cache.rb
+- lib/restfulie/client/http/error.rb
+- lib/restfulie/client/http/link.rb
+- lib/restfulie/client/http/marshal.rb
+- lib/restfulie/client/http/xml.rb
+- lib/restfulie/client/http.rb
+- lib/restfulie/client.rb
+- lib/restfulie/common/builder/builder_base.rb
+- lib/restfulie/common/builder/helpers.rb
+- lib/restfulie/common/builder/marshalling/atom.rb
+- lib/restfulie/common/builder/marshalling/base.rb
+- lib/restfulie/common/builder/marshalling/json.rb
+- lib/restfulie/common/builder/marshalling/xml.rb
+- lib/restfulie/common/builder/marshalling.rb
+- lib/restfulie/common/builder/rules/collection_rule.rb
+- lib/restfulie/common/builder/rules/custom_attributes.rb
+- lib/restfulie/common/builder/rules/link.rb
+- lib/restfulie/common/builder/rules/links.rb
+- lib/restfulie/common/builder/rules/member_rule.rb
+- lib/restfulie/common/builder/rules/namespace.rb
+- lib/restfulie/common/builder/rules/rules_base.rb
+- lib/restfulie/common/builder.rb
+- lib/restfulie/common/errors.rb
+- lib/restfulie/common/logger.rb
+- lib/restfulie/common/representation/atom.rb
+- lib/restfulie/common/representation/generic.rb
+- lib/restfulie/common/representation/json.rb
+- lib/restfulie/common/representation/xml.rb
+- lib/restfulie/common/representation.rb
+- lib/restfulie/common.rb
+- lib/restfulie/server/action_controller/base.rb
+- lib/restfulie/server/action_controller/params_parser.rb
+- lib/restfulie/server/action_controller/restful_responder.rb
+- lib/restfulie/server/action_controller/routing/restful_route.rb
+- lib/restfulie/server/action_controller/routing.rb
+- lib/restfulie/server/action_controller.rb
+- lib/restfulie/server/action_view/helpers.rb
+- lib/restfulie/server/action_view/template_handlers/tokamak.rb
+- lib/restfulie/server/action_view/template_handlers.rb
+- lib/restfulie/server/action_view.rb
+- lib/restfulie/server/configuration.rb
+- lib/restfulie/server/core_ext/array.rb
+- lib/restfulie/server/core_ext.rb
+- lib/restfulie/server/restfulie_controller.rb
+- lib/restfulie/server.rb
+- lib/restfulie.rb
+- lib/vendor/atom/configuration.rb
+- lib/vendor/atom/pub.rb
+- lib/vendor/atom/xml/parser.rb
+- lib/vendor/atom.rb
+- LICENSE
+- Rakefile
+- README.textile
+has_rdoc: true
+homepage: http://restfulie.caelumobjects.com
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      segments: 
+      - 0
+      version: "0"
+requirements: []
+
+rubyforge_project: 
+rubygems_version: 1.3.6
+signing_key: 
+specification_version: 3
+summary: Hypermedia aware resource based library in ruby (client side) and ruby on rails (server side).
+test_files: []
+
