@@ -1,0 +1,21 @@
+<html>
+<table>
+	<tr><td>
+		<% if !@rest_requests.blank? %>
+			All related requests<br/>
+		  <% for rest_request in @rest_requests %>
+		  	<%= link_to rest_request.uri, rest_request_url(rest_request) %><br/>
+		  <% end %>
+		<% else %>
+		<% end %>
+	</td>
+	<td>
+<%= yield%>
+</td>
+<td>
+	New request<br/>
+	<%= render :partial => "form" %>
+</td>
+</tr>
+</table>
+</html>

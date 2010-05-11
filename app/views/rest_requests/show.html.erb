@@ -1,0 +1,32 @@
+ID: <%= @rest_request.login %><br/>
+URI: <%= @rest_request.uri %><br/>
+Method: <%= @rest_request.method %><br/>
+Response code: 
+<% if @response.code>=300 %>
+	<font color="red"><%= @response.code %></font>
+<% else %>
+	<font color="green"><%= @response.code %></font>
+<% end %>
+<br/>
+<br/>
+
+<script>
+function rest_request(uri) {
+	document.getElementById('rest_request_uri').value = uri;
+	document.getElementById('rest_request_method_get').checked = "checked";
+	document.getElementById('rest_request_login').value = '<%= @rest_request.login%>';
+	document.forms[0].submit();
+}
+</script>
+
+<% if !@links.blank? %>
+  <% for link in @links %>
+    <%=link[:rel]%>: <a href="javascript:rest_request('<%=link[:href]%>');">GET</a> (<%=link[:type]%>)<br/>
+  <% end %>
+<% else %>
+  <font color="red">No links found.</font><br/>
+<% end %>
+
+<br/>
+
+<textarea style="width: 600px; height: 400px;"><%= h @response.body %></textarea>

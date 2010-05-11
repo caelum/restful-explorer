@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  uri: MyString
+  method: MyString
+  content_type: MyString
+  content: MyString
+  parameters: MyString
+  accepts: MyString
+  login: MyString
+
+two:
+  uri: MyString
+  method: MyString
+  content_type: MyString
+  content: MyString
+  parameters: MyString
+  accepts: MyString
+  login: MyString

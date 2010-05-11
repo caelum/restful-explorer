@@ -1,0 +1,20 @@
+<% form_for @new_rest_request do |f| -%>
+  <%= f.label :login, "Give me an ID for yourself" %>
+	<%= f.text_field :login %>
+	<br/>
+	<%= f.label :uri, "Uri" %>
+	<%= f.text_field :uri %> (needs a path also! http://xpto.com is invalid)
+	<br/>
+	<%= f.label :method, "Method" %>
+	<%= f.radio_button :method, :get %> GET<br/>
+	<%= f.radio_button :method, :post %> POST<br/>
+	<%= f.radio_button :method, :put %> PUT<br/>
+	<%= f.radio_button :method, :delete %> DELETE<br/>
+	<%= f.radio_button :method, :patch %> PATCH<br/>
+	<%= f.radio_button :method, :head %> HEAD<br/>
+	<%= f.radio_button :method, :options %> OPTIONS<br/>
+	<%= f.radio_button :method, :trace %> TRACE<br/>
+	<br/>
+	<%= f.submit "Access", :disable_with => 'Accessing...' %>
+<% end -%>
+ 
